@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="__ADMIN__/plugins/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="__ADMIN__/css/global.css" media="all">
+    <link rel="stylesheet" href="__ADMIN__/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__ADMIN__/css/table.css" />
+    <link rel="stylesheet" href="__ADMIN__/css/style.css" />
+</head>
+
+<body>
+<div class="admin-main">
+    <blockquote class="layui-elem-quote">
+        <a href="{:url('fieldAdd',array('moduleid'=>input('id')))}" class="layui-btn layui-btn-small">
+            <i class="fa fa-plus"></i> {:lang('add')}{:lang('field')}
+        </a>
+        <a href="{:url('index')}" class="layui-btn layui-btn-small layui-btn-primary pull-right">模型列表</a>
+    </blockquote>
+    <fieldset class="layui-elem-field">
+        <legend>{:lang('field')}{:lang('list')}</legend>
+        <div class="layui-field-box">
+            <form class="layui-form layui-form-pane">
+                <table class=" layui-table table-hover">
+                    <thead>
+                    <tr>
+                        <th>{:lang('order')}</th>
+                        <th>字段名</th>
+                        <th>别名</th>
+                        <th>字段类型</th>
+                        <th>系统字段</th>
+                        <th>必填</th>
+                        <th>{:lang('action')}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {volist name="list" id="vo"}
+                    <tr>
+                        <td><input name="listorders[{$vo.id}]" class="list_order layui-input" value=" {$vo.listorder}" size="10"/></td>
+                        <td>{$vo.field}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.type}</td>
+                        <td>
+                            {if condition="in_array($vo['field'],$sysfield)"}
+                            <i class="fa fa-check"></i>
+                            {else /}
+                            <i class="fa fa-times "></i>
+                            {/if}
+                        </td>
+                        <td>
+                            {if condition="$vo['required'] eq 1"}
+                            <i class="fa fa-check"></i>
+                            {else /}
+                            <i class="fa fa-times "></i>
+                            {/if}
+                        </td>
+                        <td>
+                            <a href="{:url('fieldEdit',array('moduleid'=>$vo['moduleid'],'id'=>$vo['id']))}" class="layui-btn layui-btn-mini">{:lang('edit')}</a>
+                            {if condition="$vo['status']==1"}
+                                {if condition="in_array($vo['field'],$nodostatus)"}
+                                    <button type="button" class="layui-btn layui-btn-mini layui-btn-disabled">已禁用</button>
+                                {else /}
+                                    <a href="javascript:" class="zt{$vo.id} layui-btn layui-btn-mini layui-btn-warm" onclick="return stateyes('{$vo.id}');">已启用</a>
+                                {/if}
+                            {else /}
+                                <a href="javascript:" class="zt{$vo.id} layui-btn layui-btn-mini layui-btn-danger" onclick="return stateyes('{$vo.id}');">已禁用</a>
+                            {/if}
+                            {if condition="in_array($vo['field'],$sysfield)"}
+                                <button type="button" class="layui-btn layui-btn-mini layui-btn-disabled">删除</button>
+                            {else /}
+                                <a href="javascript:" onclick="return del('{$vo.id}');" class="layui-btn layui-btn-mini layui-btn-danger" >删除</a>
+                            {/if}
+                        </td>
+                    </tr>
+                    {/volist}
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="8">
+                                <button type="button" class="layui-btn  layui-btn-small" lay-submit="" lay-filter="sort">{:lang('order')}</button>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </form>
+        </div>
+    </fieldset>
+    <div class="admin-table-page">
+        <div id="page" class="page">
+            {$page}
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__ADMIN__/plugins/layui/layui.js"></script>
+<script src="__STATIC__/js/jquery.2.1.1.min.js"></script>
+<script>
+    layui.use(['form', 'layer'], function() {
+        var form = layui.form(), layer = layui.layer;
+        form.on('submit(sort)', function(data){
+            data.field.id= "{:input('id')}";
+            $.post("{:url('listOrder')}",data.field,function(res){
+                if(res.code > 0){
+                    layer.msg(res.msg,{time:1000,icon:1},function(){
+                        location.href = res.url;
+                    });
+                }else{
+                    layer.msg(res.msg,{time:1000,icon:2});
+                }
+            })
+        });
+    });
+    function del(id) {
+        layer.confirm('你确定要删除该字段吗？', {icon: 3}, function (index) {
+            layer.close(index);
+            window.location.href = "{:url('fieldDel')}?id="+id ;
+        });
+    }
+    function stateyes(id) {
+        $.post('{:url("fieldStatus")}', {id: id}, function (data) {
+            if (data.code) {
+                if (data.msg == '状态禁止') {
+                    layer.msg(data.msg,{icon:5});
+                    var a = '已禁用';
+                    $('.zt' + id).html(a).removeClass('layui-btn-warm').addClass('layui-btn-danger');
+
+                    return false;
+                } else {
+                    layer.msg(data.msg,{icon:6});
+                    var b = '已启用';
+                    $('.zt' + id).html(b).removeClass('layui-btn-danger').addClass('layui-btn-warm');
+                    return false;
+                }
+            }
+        });
+        return false;
+    }
+</script>
+</body>
+
+</html>

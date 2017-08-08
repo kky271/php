@@ -1,0 +1,1078 @@
+[ 2017-07-05T16:58:58+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin
+[ log ] 127.0.0.1/cltphp/admin [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,129.86kb] [文件加载：39]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-05T16:58:58+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/login/index.html
+[ log ] 127.0.0.1/cltphp/admin/login/index.html [运行时间：0.445026s][吞吐率：2.25req/s] [内存消耗：2,033.05kb] [文件加载：45]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031002s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_role` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_role` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061003s ]
+
+---------------------------------------------------------------
+[ 2017-07-05T16:58:59+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/public/static/admin/Images/login-bg-1.jpg
+[ log ] 127.0.0.1/cltphp/public/static/admin/Images/login-bg-1.jpg [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：843.43kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'static',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/public/static/admin/css/login.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'login-bg-1.jpg',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-05T17:46:28+08:00 ] 127.0.0.1 127.0.0.1 POST /cltphp/admin/login/index.html
+[ log ] 127.0.0.1/cltphp/admin/login/index.html [运行时间：0.115007s][吞吐率：8.70req/s] [内存消耗：1,911.51kb] [文件加载：46]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => '*/*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ RUN ] app\admin\controller\Login->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.058003s ]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:46:31+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/index/index.html
+[ log ] 127.0.0.1/cltphp/admin/index/index.html [运行时间：0.163009s][吞吐率：6.13req/s] [内存消耗：2,147.41kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_auth_rule` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_auth_rule` WHERE  (  menustatus=1 ) ORDER BY `sort` [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: index[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:46:31+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/index/main.html
+[ log ] 127.0.0.1/cltphp/admin/index/main.html [运行时间：0.200012s][吞吐率：5.00req/s] [内存消耗：2,061.84kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->main[ E:\phpStudy\WWW\cltphp\app\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.014001s ]
+[ error ] [8]Undefined index: index[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:19+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/Template/index.html
+[ log ] 127.0.0.1/cltphp/admin/Template/index.html [运行时间：0.197012s][吞吐率：5.08req/s] [内存消耗：2,125.04kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Template',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Template->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Template.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\template\index.html [ array (
+  0 => 'viewSuffix',
+  1 => 'templates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]Undefined index: template[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+[ error ] [8]Use of undefined constant filename - assumed 'filename'[E:\phpStudy\WWW\cltphp\runtime\temp\15ced44a82025d2d023d569a8b2a20b9.php:63]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:22+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/Auth/adminList.html
+[ log ] 127.0.0.1/cltphp/admin/Auth/adminList.html [运行时间：0.239014s][吞吐率：4.18req/s] [内存消耗：2,262.48kb] [文件加载：55]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Auth',
+    2 => 'adminList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Auth->adminList[ E:\phpStudy\WWW\cltphp\app\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\auth\adminList.html [ array (
+  0 => 'testval',
+  1 => 'page',
+  2 => 'adminList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_admin` `a` LEFT JOIN `clt_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `clt_admin` `a` LEFT JOIN `clt_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ error ] [8]Undefined index: auth[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:26+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/System/system.html
+[ log ] 127.0.0.1/cltphp/admin/System/system.html [运行时间：0.185010s][吞吐率：5.41req/s] [内存消耗：2,112.54kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'system',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\System->system[ E:\phpStudy\WWW\cltphp\app\admin\controller\System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\system\system.html [ array (
+  0 => 'system',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`name`,`url`,`title`,`key`,`des`,`bah`,`copyright`,`ads`,`tel`,`email` FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: system[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:31+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/Wechat/menu.html
+[ log ] 127.0.0.1/cltphp/admin/Wechat/menu.html [运行时间：0.210012s][吞吐率：4.76req/s] [内存消耗：2,187.59kb] [文件加载：53]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Wechat',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wechat->menu[ E:\phpStudy\WWW\cltphp\app\admin\controller\Wechat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\wechat\menu.html [ array (
+  0 => 'wxMenu',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_wx_menu` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_wx_menu` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: wechat[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:32+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/Wechat/index.html
+[ log ] 127.0.0.1/cltphp/admin/Wechat/index.html [运行时间：0.208012s][吞吐率：4.81req/s] [内存消耗：2,194.48kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Wechat',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wechat->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Wechat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\wechat\index.html [ array (
+  0 => 'info',
+  1 => 'apiurl',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_wx_user` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_wx_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: wechat[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:32+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/public/uploads/20170602/897e6d0cdb17b91927360410d7d60f5b.jpg
+[ log ] 127.0.0.1/cltphp/public/uploads/20170602/897e6d0cdb17b91927360410d7d60f5b.jpg [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：843.11kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => '20170602',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/Wechat/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:33+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/public/uploads/20170602/8b2cbbacd2081f7fd83b30ba24c3f149.jpg
+[ log ] 127.0.0.1/cltphp/public/uploads/20170602/8b2cbbacd2081f7fd83b30ba24c3f149.jpg [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：843.11kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => '20170602',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/Wechat/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:50+08:00 ] 127.0.0.1 127.0.0.1 POST /cltphp/admin/UpFiles/upload.html
+[ log ] 127.0.0.1/cltphp/admin/UpFiles/upload.html [运行时间：0.171010s][吞吐率：5.85req/s] [内存消耗：2,100.62kb] [文件加载：51]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'UpFiles',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/Wechat/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarywoga1KeMEBd5ZHgB',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '48864',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\UpFiles->upload[ E:\phpStudy\WWW\cltphp\app\admin\controller\UpFiles.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: upfiles[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:56+08:00 ] 127.0.0.1 127.0.0.1 POST /cltphp/admin/wechat/weixin.html
+[ log ] 127.0.0.1/cltphp/admin/wechat/weixin.html [运行时间：0.263015s][吞吐率：3.80req/s] [内存消耗：2,209.58kb] [文件加载：54]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wechat',
+    2 => 'weixin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/Wechat/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => '*/*',
+  'content-length' => '216',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'wxname' => 'dsfdsfdsf',
+  'wxid' => 'gh_b6f39fuakdudsfdsfds',
+  'weixin' => 'sdfsf',
+  'appid' => 'sdfsdfdsfsdfdf',
+  'appsecret' => 'dsfsdfsdfdsfsdfdfdsf',
+  'w_token' => 'sdfsdf',
+  'thumb' => '',
+  'type' => '1',
+  'wait_access' => '0',
+  'qr' => '/uploads/20170705/8e9b7c61d0208c87a3bedb78fc5a3cc2.png',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wechat->weixin[ E:\phpStudy\WWW\cltphp\app\admin\controller\Wechat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.002000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_wx_user` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `clt_wx_user`  SET `wxname`='dsfdsfdsf',`wxid`='gh_b6f39fuakdudsfdsfds',`weixin`='sdfsf',`appid`='sdfsdfdsfsdfdf',`appsecret`='dsfsdfsdfdsfsdfdfdsf',`w_token`='sdfsdf',`type`=1,`wait_access`=0,`qr`='/uploads/20170705/8e9b7c61d0208c87a3bedb78fc5a3cc2.png'  WHERE  `id` = 1 [ RunTime:0.023001s ]
+[ error ] [8]Undefined index: wechat[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:58+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/admin/wechat/index.html
+[ log ] 127.0.0.1/cltphp/admin/wechat/index.html [运行时间：0.196011s][吞吐率：5.10req/s] [内存消耗：2,194.48kb] [文件加载：52]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'wechat',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/Wechat/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Wechat->index[ E:\phpStudy\WWW\cltphp\app\admin\controller\Wechat.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\cltphp/app/admin\view\wechat\index.html [ array (
+  0 => 'info',
+  1 => 'apiurl',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY `listorder` [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=2 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=3 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=4 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=5 ) ORDER BY `listorder` [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=28 ) ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=cltphp_db;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_wx_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_wx_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]Undefined index: wechat[E:\phpStudy\WWW\cltphp\app\admin\controller\Common.php:26]
+
+---------------------------------------------------------------
+[ 2017-07-05T17:47:58+08:00 ] 127.0.0.1 127.0.0.1 GET /cltphp/public/uploads/20170602/897e6d0cdb17b91927360410d7d60f5b.jpg
+[ log ] 127.0.0.1/cltphp/public/uploads/20170602/897e6d0cdb17b91927360410d7d60f5b.jpg [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：843.11kb] [文件加载：30]
+[ info ] [ LANG ] E:\phpStudy\WWW\cltphp\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'uploads',
+    2 => '20170602',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_58347d769d009bcf6074e9a0ab7ba05e=1497410985; _ga=GA1.1.312475473.1498702977; PHPSESSID=qnke6jdjk0j4n3it4g8veaubm5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/cltphp/admin/wechat/index.html',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3026.3 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

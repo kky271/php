@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="__ADMIN__/plugins/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="__ADMIN__/css/global.css" media="all">
+    <link rel="stylesheet" href="__ADMIN__/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__ADMIN__/css/table.css" />
+    <link rel="stylesheet" href="__ADMIN__/css/style.css" />
+</head>
+
+<body>
+<div class="admin-main">
+    <blockquote class="layui-elem-quote">
+        <a href="{:url('add')}" class="layui-btn layui-btn-small">
+            <i class="fa fa-plus"></i> {:lang('add')}{:lang('module')}
+        </a>
+    </blockquote>
+    <fieldset class="layui-elem-field">
+        <legend>{:lang('module')}{:lang('list')}</legend>
+        <div class="layui-field-box">
+            <table class=" layui-table table-hover">
+                <thead>
+                <tr>
+                    <th>{:lang('id')}</th>
+                    <th>{:lang('module')}{:lang('name')}</th>
+                    <th>{:lang('table')}</th>
+                    <th>{:lang('detail')}</th>
+                    <th>{:lang('status')}</th>
+                    <th>{:lang('action')}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="list" id="v"}
+                <tr>
+                    <td>{$v.id}</td>
+                    <td>{$v.title}</td>
+                    <td>{$v.name}</td>
+                    <td>{$v.description}</td>
+                    <td>
+                        {if condition='$v["status"] eq 1'}
+                        <a class="red" href="javascript:;" onclick="return stateYes('{$v.id}');" title="已开启">
+                            <div id="zt{$v.id}">
+                                <button class="layui-btn layui-btn-warm layui-btn-mini">开启</button>
+                            </div>
+                        </a>
+                        {else/}
+                        <a class="red" href="javascript:;" onclick="return stateYes('{$v.id}');" title="已禁用">
+                            <div id="zt{$v.id}">
+                                <button class="layui-btn layui-btn-danger layui-btn-mini">禁用</button>
+                            </div>
+                        </a>
+                        {/if}
+                    </td>
+                    <td>
+                        <a href="{:url('field',['id'=>$v['id']])}" class="layui-btn layui-btn-normal layui-btn-mini">{:lang('module')}字段</a>
+                        <a href="{:url('edit',['id'=>$v['id']])}" class="layui-btn layui-btn-mini">{:lang('edit')}</a>
+                        <a href="javascript:;" onclick="return del('{$v.id}')" class="layui-btn layui-btn-mini layui-btn-danger">{:lang('del')}</a>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+
+        </div>
+    </fieldset>
+    <div class="admin-table-page">
+        <div id="page" class="page">
+            {$page}
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__ADMIN__/plugins/layui/layui.js"></script>
+<script src="__STATIC__/js/jquery.2.1.1.min.js"></script>
+<script>
+    layui.use(['form', 'layer'], function() {
+        var form = layui.form(), layer = layui.layer;
+    });
+    function del(id) {
+        layer.confirm('你确定要删除该模型吗？', {icon: 3}, function (index) {
+            layer.close(index);
+            window.location.href = "{:url('del')}?id="+id ;
+        });
+    }
+    function stateYes(id) {
+        $.post('{:url("moduleState")}', {id: id}, function (data) {
+            if (data.status) {
+                if (data.info == '状态禁止') {
+                    layer.msg(data.info,{icon:5});
+                    var a = '<button class="layui-btn layui-btn-danger layui-btn-mini" title="已禁用">禁用</button>'
+                    $('#zt' + id).html(a);
+                    return false;
+                } else {
+                    layer.msg(data.info,{icon:6});
+                    var b = '<button class="layui-btn layui-btn-warm layui-btn-mini" title="已开启">开启</button>'
+                    $('#zt' + id).html(b);
+                    return false;
+                }
+
+            }
+        });
+        return false;
+    }
+</script>
+</body>
+
+</html>

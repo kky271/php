@@ -1,0 +1,50 @@
+{include file="common/head"/}
+
+<!-- pagetitle start here -->
+<section id="pagetitle-wrapper">
+    <div class="pagetitle-content">
+        <h2>{$title}</h2>
+    </div>
+</section>
+<!-- pagetitle end here -->
+
+<!-- breadcrumb start here -->
+<section id="breadcrumb-wrapper">
+    <div id="breadcrumb-content">
+        <ul>
+            <li><a href="{:url('index/index')}">首页</a></li>
+            <li><a href="#">{$title}</a></li>
+        </ul>
+    </div>
+</section>
+<!-- breadcrumb end here -->
+
+<!-- maincontent start here -->
+<section id="content-wrapper">
+    <div class="row">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="twelve columns">
+                    <!-- begin of testimonials 1 -->
+                    {volist name="$list" id="vo"}
+                    <div class="testi-tape"></div>
+                    <div class="testi-container">
+                        <div class="testi-text">
+                            <p class="testi-name">{$vo.title}</p>
+                            <blockquote>
+                                <p>{$vo.info}</p>
+                            </blockquote>
+                        </div>
+                        <div class="testi-image">
+                            <img src="{$vo.title_thumb}" alt="{$vo.title}" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    {/volist}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- maincontent end here -->
+{include file="common/footer"/}

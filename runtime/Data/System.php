@@ -1,0 +1,28 @@
+<?php
+return array (
+  'id' => 1,
+  'name' => 'CLTPHP',
+  'url' => 'http://www.cltphp.com/',
+  'title' => 'CLTPHP后台管理系统',
+  'key' => 'CLTPHP,CLTPHP后台管理系统,thinkphp,thinkphp后台管理系统',
+  'des' => 'CLTPHP后台管理系统，微信公众平台、APP移动应用设计、HTML5网站API定制开发。大型企业网站、个人博客论坛、手机网站定制开发。更高效、更快捷的进行定制开发。',
+  'email_open' => 1,
+  'email_name' => '876902658@qq.com',
+  'email_pwd' => 'maggie198586',
+  'email_smtpname' => 'smtp.qq.com',
+  'email_emname' => '876902658',
+  'email_rename' => '网站管理员',
+  'wesys_name' => 'chichu',
+  'wesys_number' => 'chichu12345',
+  'wesys_id' => '12231231231231111',
+  'wesys_type' => 1,
+  'wesys_appid' => '12312312312',
+  'wesys_appsecret' => '123123123123123',
+  'wesys_token' => 'weixin',
+  'bah' => '陕ICP备15008093号',
+  'copyright' => '2015-2020',
+  'ads' => '南京市白下区虎踞南路40-8号1-4楼',
+  'tel' => '025-86530015',
+  'email' => '1109305987@qq.com',
+);
+?>

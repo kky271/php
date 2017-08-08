@@ -1,0 +1,38 @@
+<!-- footer start here -->
+<footer>
+    <div class="row">
+        <div class="three columns mobile-two">
+            <img src="__HOME__/images/logo2.png" alt="" class="img-left" />
+            <p class="copyright-text">&copy; Copyright &copy; 2017.Company name All rights reserved.</p>
+        </div>
+        <div class="three columns mobile-two">
+            <h5>联系我们</h5>
+            <ul>
+                <li class="address-icon"><a href="http://www.cltphp.com">CLTPHP</a></li>
+                <li class="qq-icon">QQ交流群 : 229455880</li>
+                <li class="email-icon">Email : 1109305987@qq.com</li>
+            </ul>
+        </div>
+        <div class="three columns mobile-two">
+            <h5>友情链接</h5>
+            <ul>
+                {volist name="linkList" id="vo"}
+                <li><a href="{$vo.url}" target="_blank">{$vo.name}</a></li>
+                {/volist}
+                <li><a href="{:url('contact/index','catId=43')}">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="three columns mobile-two">
+            <h5>扫码捐助</h5>
+            <div class="wxsq">
+                <img src="__HOME__/images/wxsq.png">
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end here -->
+
+<script>$('#noscript').remove();</script>
+
+</body>
+</html>

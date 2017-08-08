@@ -1,0 +1,60 @@
+<?php
+return [
+    'webName'=>'CLTPHP',
+    'hello'         => '欢迎使用CLTPHP',
+    'adminInfo'     => '个人信息',
+    'logout'        =>'注销',
+    'home'          =>'浏览网站',
+    'clearCache'    =>'清除缓存',
+
+    'systemInfo'    =>'系统信息',
+
+    'admin'=>'管理员',
+    'module'=>'模型',
+
+    'user'=>'会员',
+    'nickname'=>'昵称',
+    'man'=>'男',
+    'woman'=>'女',
+
+    'message'=>'留言',
+    'link'=>'链接',
+    'ad'=>'广告',
+
+    'back'=>'返回',
+    'submit'=>'提交',
+    'open'=>'开启',
+    'close'=>'关闭',
+    'yes'=>'是',
+    'no'=>'否',
+    'edit'=>'编辑',
+    'del'=>'删除',
+    'add'=>'添加',
+    'list'=>'列表',
+    'field'=>'字段',
+    'search'=>'搜索',
+    'debris'=>'碎片',
+    'hit'=>'点击',
+
+    'name'=>'名称',
+    'table'=>'表名',
+    'detail'=>'详述',
+    'username'=>'用户名',
+    'pwd'=>'密码',
+    'email'=>'邮箱账号',
+    'tel'=>'电话号码',
+    'sex'=>'性别',
+    'qq'=>'QQ',
+    'status'=>'状态',
+    'ip'=>'IP地址',
+    'action'=>'操作',
+    'icon'=>'图标',
+    'order'=>'排序',
+    'id'=>'编号',
+    'address'=>'地址',
+    'content'=>'内容',
+    'time'=>'时间',
+    'title'=>'标题',
+
+
+];
